@@ -1,0 +1,41 @@
+import { Meta, Story, ArgsTable } from '@storybook/addon-docs';
+import * as stories from './Icons.stories.tsx';
+import Icons from '../Icons';
+
+<Meta title="Atoms/Icons" component={Icons} />
+
+# Icons
+
+Icons from the Feather icon library. They're utilized here using `react-feather`.
+
+## Usage
+
+The icons can be used in any situation you deem fit. To use one, call upon `<Icons />`, and then pass it the attributes, or props, you want it to have. 
+
+<Icons
+    name="Camera"
+    color="#2493FF"
+    size="100px"
+    strokeWidth="1.5px"
+    alt="Camera Icon"
+/>
+
+Here, you can see how to call upon the camera icon and how to set the desired props:
+
+```ts
+    <Icons
+    name="Camera"
+    color="#2493FF"
+    size="100px"
+    strokeWidth="1.5px"
+    alt="Camera Icon"
+/>
+```
+
+## Props
+
+The props allow you to customize the icon you're displaying, along with its color, size, strokeWidth, and the alt tag for accessibility.
+
+<ArgsTable of={Icons} />
+
+<Story story={stories.Icons} />
