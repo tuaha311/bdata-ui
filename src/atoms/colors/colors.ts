@@ -190,7 +190,7 @@ type GetColorList<T> = {
 export type ColorList = GetColorList<ColorObject>;
 export type ColorDefinition = keyof ColorObject;
 export const colorListArray = Object.entries(color)
-  .map(color => Object.keys(color[1]).map(value => `${color[0]}-${value}`))
+  // .map(color => Object.keys(color[1]).map(value => `${color[0]}-${value}`))
   .flat() as ColorList[];
 
 export interface LightAndDark {

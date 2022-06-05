@@ -1,6 +1,6 @@
 {
   "name": "bdata",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "BDATA UI Library",
   "private": false,
   "author": {
@@ -8,6 +8,7 @@
     "url": "https://www.bdata.ca/"
   },
   "scripts": {
+    "rollup": "rollup -c",
     "storybook": "start-storybook -p 6006 -s .storybook/public",
     "build-storybook": "build-storybook -s .storybook/public",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
@@ -74,6 +75,9 @@
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.2",
     "@storybook/addon-actions": "^6.4.8",
     "@storybook/addon-contexts": "^5.3.21",
     "@storybook/addon-docs": "^6.4.19",
@@ -111,10 +115,18 @@
     "eslint-webpack-plugin": "^2.1.0",
     "jest": "^26.6.0",
     "prettier": "^2.3.2",
+    "rollup": "^2.75.5",
+    "rollup-plugin-dts": "^4.2.2",
     "storybook-dark-mode": "^1.0.8",
     "storybook-react-context": "^0.4.0",
     "typescript": "^4.0.3"
   },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
   "browserslist": {
     "production": [
       ">0.2%",
