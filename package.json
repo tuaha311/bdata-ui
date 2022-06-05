@@ -1,11 +1,14 @@
 {
-  "name": "bdata",
-  "version": "0.0.1",
+  "name": "@tuaha311/bdata-ui",
+  "version": "0.0.3",
   "description": "BDATA UI Library",
   "private": false,
   "author": {
     "name": "BData",
     "url": "https://www.bdata.ca/"
+  },
+  "externals": {
+    "react": "React"
   },
   "scripts": {
     "rollup": "rollup -c",

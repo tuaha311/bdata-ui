@@ -27,6 +27,8 @@
     }
   },
   "rules": {
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
     "curly": "error",
     "eqeqeq": ["error", "smart"],
     "no-lonely-if": "error",
@@ -37,7 +39,7 @@
     "no-console": ["warn", { "allow": ["warn", "error"] }],
     "prefer-arrow-callback": "error",
     "object-shorthand": "error",
-    "no-use-before-define": "error",
+    // "no-use-before-define": "error",
     "no-shadow": ["error", { "builtinGlobals": false }],
     "spaced-comment": ["error", "always"],
     "no-nested-ternary": "error",
